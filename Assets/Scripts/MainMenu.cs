@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     // From: https://www.youtube.com/watch?v=zc8ac_qUXQY&t=455s
     // This script is used to simulate the main menu of the game:
 
+    // Play the game:
     public void PlayGame()
     {
         SceneManager.LoadScene("BowlingAlley");
