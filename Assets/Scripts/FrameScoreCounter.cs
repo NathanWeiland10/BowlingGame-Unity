@@ -14,6 +14,7 @@ public class FrameScoreCounter : MonoBehaviour
 
     public void changeTimesToAddScore(int amount)
     {
+        // Increase the score:
         timesToAddScore += amount;
     }
 
@@ -36,6 +37,7 @@ public class FrameScoreCounter : MonoBehaviour
 
     public void addToTotalPins(int pins)
     {
+        // Add pin count:
         totalFrameScore += pins;
     }
 
