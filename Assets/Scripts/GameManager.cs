@@ -75,7 +75,10 @@ public class GameManager : MonoBehaviour
             i++;
         }
 
+<<<<<<< HEAD
         // Set the player to be in the first frame and instantiate / setup the pins:
+=======
+>>>>>>> c6820dbbb499cc4ccc4fa2b13c853d34a0349179
         frameCounter = 1;
         player = Instantiate(playerPrefab, new Vector3(playerSpawnPoint.position.x, playerSpawnPoint.position.y, playerSpawnPoint.position.z), Quaternion.identity);
         pin1 = Instantiate(pin, new Vector3(0f, yFloorHeight, 0f), Quaternion.identity);
@@ -206,7 +209,10 @@ public class GameManager : MonoBehaviour
                 totalPinCount = 0;
             }
 
+<<<<<<< HEAD
             // Remove the pins:
+=======
+>>>>>>> c6820dbbb499cc4ccc4fa2b13c853d34a0349179
             Destroy(pin1);
             Destroy(pin2);
             Destroy(pin3);

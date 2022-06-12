@@ -63,7 +63,11 @@ public class PlayerBall : MonoBehaviour
 
     private void FixedUpdate()
     {
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> c6820dbbb499cc4ccc4fa2b13c853d34a0349179
         if (allowForces)
         {
             ballRB.drag = 0f;
@@ -94,7 +98,10 @@ public class PlayerBall : MonoBehaviour
 
     public void resetLaunch()
     {
+<<<<<<< HEAD
         // Reset the launch values:
+=======
+>>>>>>> c6820dbbb499cc4ccc4fa2b13c853d34a0349179
         canLaunch = true;
         isLaunching = false;
         allowForces = false;
