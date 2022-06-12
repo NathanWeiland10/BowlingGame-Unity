@@ -94,6 +94,7 @@ public class PlayerBall : MonoBehaviour
 
     public void resetLaunch()
     {
+        // Reset the values:
         canLaunch = true;
         isLaunching = false;
         allowForces = false;
