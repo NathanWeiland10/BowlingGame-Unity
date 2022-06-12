@@ -10,6 +10,7 @@ public class PinFallDetection : MonoBehaviour
     {
         if (c.gameObject.tag == "Floor")
         {
+            // Set pin:
             pin.setPinFallen(true);
         }
     }
