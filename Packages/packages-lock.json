@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "com.unity.collab-proxy": {
-<<<<<<< HEAD
       "version": "1.15.17",
       "depth": 0,
       "source": "registry",
@@ -12,23 +11,12 @@
     },
     "com.unity.ext.nunit": {
       "version": "1.0.6",
-=======
-      "version": "1.2.16",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.ext.nunit": {
-      "version": "1.0.0",
->>>>>>> c6820dbbb499cc4ccc4fa2b13c853d34a0349179
       "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.rider": {
-<<<<<<< HEAD
       "version": "3.0.14",
       "depth": 0,
       "source": "registry",
@@ -43,28 +31,16 @@
       "source": "registry",
       "dependencies": {
         "com.unity.test-framework": "1.1.9"
-=======
-      "version": "1.1.4",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.test-framework": "1.1.1"
->>>>>>> c6820dbbb499cc4ccc4fa2b13c853d34a0349179
       },
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.vscode": {
-<<<<<<< HEAD
       "version": "1.2.5",
-=======
-      "version": "1.2.1",
->>>>>>> c6820dbbb499cc4ccc4fa2b13c853d34a0349179
       "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-<<<<<<< HEAD
     "com.unity.nuget.newtonsoft-json": {
       "version": "3.0.2",
       "depth": 2,
@@ -91,53 +67,29 @@
         "com.unity.modules.unitywebrequest": "1.0.0",
         "com.unity.nuget.newtonsoft-json": "3.0.2",
         "com.unity.modules.androidjni": "1.0.0"
-=======
-    "com.unity.probuilder": {
-      "version": "4.2.3",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.settings-manager": "1.0.0"
->>>>>>> c6820dbbb499cc4ccc4fa2b13c853d34a0349179
       },
       "url": "https://packages.unity.com"
     },
     "com.unity.settings-manager": {
-<<<<<<< HEAD
       "version": "1.0.3",
-=======
-      "version": "1.0.0",
->>>>>>> c6820dbbb499cc4ccc4fa2b13c853d34a0349179
       "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
-<<<<<<< HEAD
       "version": "1.1.31",
       "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.ext.nunit": "1.0.6",
-=======
-      "version": "1.1.14",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.ext.nunit": "1.0.0",
->>>>>>> c6820dbbb499cc4ccc4fa2b13c853d34a0349179
         "com.unity.modules.imgui": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
     "com.unity.textmeshpro": {
-<<<<<<< HEAD
       "version": "3.0.6",
-=======
-      "version": "2.0.1",
->>>>>>> c6820dbbb499cc4ccc4fa2b13c853d34a0349179
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -146,7 +98,6 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.timeline": {
-<<<<<<< HEAD
       "version": "1.6.4",
       "depth": 0,
       "source": "registry",
@@ -156,12 +107,6 @@
         "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.particlesystem": "1.0.0"
       },
-=======
-      "version": "1.2.14",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
->>>>>>> c6820dbbb499cc4ccc4fa2b13c853d34a0349179
       "url": "https://packages.unity.com"
     },
     "com.unity.ugui": {
@@ -169,12 +114,8 @@
       "depth": 0,
       "source": "builtin",
       "dependencies": {
-<<<<<<< HEAD
         "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0"
-=======
-        "com.unity.modules.ui": "1.0.0"
->>>>>>> c6820dbbb499cc4ccc4fa2b13c853d34a0349179
       }
     },
     "com.unity.modules.ai": {
@@ -310,7 +251,6 @@
       "depth": 0,
       "source": "builtin",
       "dependencies": {
-<<<<<<< HEAD
         "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0",
@@ -323,8 +263,6 @@
       "source": "builtin",
       "dependencies": {
         "com.unity.modules.ui": "1.0.0",
-=======
->>>>>>> c6820dbbb499cc4ccc4fa2b13c853d34a0349179
         "com.unity.modules.imgui": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0"
       }
