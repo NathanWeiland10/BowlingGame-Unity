@@ -206,6 +206,7 @@ public class GameManager : MonoBehaviour
                 totalPinCount = 0;
             }
 
+            // Remove the pins:
             Destroy(pin1);
             Destroy(pin2);
             Destroy(pin3);
