@@ -1,4 +1,4 @@
-﻿// This code is used to stop the camera from moving forward when the ball reaches close enough to the pins
+﻿// This code is used to stop the camera from moving forward when the ball reaches close enough to the pins:
 
 using UnityEngine;
 
