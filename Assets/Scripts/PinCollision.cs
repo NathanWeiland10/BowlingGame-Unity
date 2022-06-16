@@ -1,10 +1,9 @@
-﻿// This code is used to determine when a pin has collided with the player's ball and plays a sound effect when hit
+﻿// This code is used to determine when a pin has collided with the player's ball and plays a sound effect when hit:
 
 using UnityEngine;
 
 public class PinCollision : MonoBehaviour
 {
-
     public string[] pinHitBallSounds;
     bool hasBeenHitBall = false;
 
@@ -17,6 +16,5 @@ public class PinCollision : MonoBehaviour
             hasBeenHitBall = true;
         }
     }
-
 
 }
