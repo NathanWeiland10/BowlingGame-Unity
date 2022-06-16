@@ -1,4 +1,4 @@
-﻿// This code is used to determine when a pin has collided with the floor and plays a sound effect when collided with
+﻿// This code is used to determine when a pin has collided with the floor and plays a sound effect when collided with:
 
 using UnityEngine;
 
@@ -17,4 +17,5 @@ public class PinCollisionFloor : MonoBehaviour
             hasHitFloor = true;
         }
     }
+    
 }
