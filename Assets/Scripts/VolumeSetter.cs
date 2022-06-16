@@ -1,4 +1,4 @@
-﻿// This code is used to allow the player to change the volume of the game using buttons
+﻿// This code is used to allow the player to change the volume of the game using buttons:
 
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,7 +6,6 @@ using UnityEngine.Audio;
 
 public class VolumeSetter : MonoBehaviour
 {
-    SettingsSaver settingsSaver;
     public AudioMixer audioMixer;
     public GameObject[] volumeCircles;
     public int volumeCounter = 8;
@@ -14,6 +13,8 @@ public class VolumeSetter : MonoBehaviour
     public Sprite filledCircle;
     public Sprite grayCircle;
     public string changeSound;
+
+    SettingsSaver settingsSaver;
 
     void Awake()
     {
@@ -68,6 +69,7 @@ public class VolumeSetter : MonoBehaviour
         settingsSaver.setCurrentVolumeCounter(volumeCounter);
         FindObjectOfType<AudioManager>().Play(changeSound);
     }
+    
     public void SetVolume(int volume)
     {
         switch (volume)
