@@ -1,4 +1,4 @@
-﻿// This code is used to determine when the player ball has collided with a stop wall and will stop a sound effect when collided with
+﻿// This code is used to determine when the player ball has collided with a stop wall and will stop a sound effect when collided with:
 
 using UnityEngine;
 
@@ -11,4 +11,5 @@ public class RollStopWall : MonoBehaviour
             FindObjectOfType<AudioManager>().Stop("BallRoll1");
         }
     }
+    
 }
