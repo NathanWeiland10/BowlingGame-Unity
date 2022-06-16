@@ -1,4 +1,4 @@
-﻿// This code is used to determine when a pin falls to perform an action, such as playing a sound effect
+﻿// This code is used to determine when a pin falls to perform an action, such as playing a sound effect:
 
 using UnityEngine;
 
@@ -6,13 +6,14 @@ public class BowlingPin : MonoBehaviour
 {
 
     public PinFallDetection fallDetector;
-    public bool fallen = false;
     public Transform centerOfMass;
     public Rigidbody pinRB;
+    
+    bool fallen;
 
-    public void setPinFallen(bool fall)
+    public void setPinFallen(bool b)
     {
-        fallen = fall;
+        fallen = b;
     }
 
     public bool getPinFallen()
