@@ -1,4 +1,4 @@
-﻿// This script is used to control the main components of the player's ball, such as the ball's weight and movement
+﻿// This script is used to control the main components of the player's ball, such as the ball's weight and movement:
 
 using UnityEngine;
 
@@ -9,15 +9,14 @@ public class PlayerBall : MonoBehaviour
     public float moveSpeed;
     public Rigidbody ballRB;
     public Camera mainCamera;
-    GameManager gameManager;
     public float powerSliderSpeed;
-
     public float minLaunchPower;
     public float maxLaunchPower;
     public float turnSpeed;
 
-    float timer;
+    GameManager gameManager;
 
+    float timer;
     float launchPower;
     float launchSliderValue;
 
@@ -33,13 +32,11 @@ public class PlayerBall : MonoBehaviour
 
     void Update()
     {
-
         if (isLaunching)
         {
             timer += Time.deltaTime;
 
             launchSliderValue = (1 - Mathf.Abs(Mathf.Sin(timer * powerSliderSpeed)));
-
             launchPower = ((1 - Mathf.Abs(Mathf.Sin(timer * powerSliderSpeed))) * maxLaunchPower) + minLaunchPower;
 
             if (Input.GetKeyDown(KeyCode.Space) && canLaunch)
@@ -51,25 +48,21 @@ public class PlayerBall : MonoBehaviour
                 canLaunch = false;
                 timer = Mathf.PI / (powerSliderSpeed * 2);
             }
-
         }
-
         if (Input.GetKeyDown(KeyCode.Space) && canLaunch)
         {
             isLaunching = true;
         }
-
     }
 
     private void FixedUpdate()
     {
-
         if (allowForces)
         {
             ballRB.drag = 0f;
             ballRB.AddForce(Vector3.forward * launchPower);
         }
-
+        
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             ballRB.AddForce(Vector3.left * turnSpeed);
@@ -94,7 +87,6 @@ public class PlayerBall : MonoBehaviour
 
     public void resetLaunch()
     {
-        // Reset the values:
         canLaunch = true;
         isLaunching = false;
         allowForces = false;
