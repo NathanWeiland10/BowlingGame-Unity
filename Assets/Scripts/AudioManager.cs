@@ -10,7 +10,6 @@ public class AudioManager : MonoBehaviour
 	// Begin Citation
 	// https://www.youtube.com/watch?v=6OT43pvUyfY
 	// This code is used to create audio sources and change their settings
-
 	public static AudioManager instance;
 	public AudioMixerGroup mixerGroup;
 	public Sound[] sounds;
@@ -30,7 +29,6 @@ public class AudioManager : MonoBehaviour
 			s.source = gameObject.AddComponent<AudioSource>();
 			s.source.clip = s.clip;
 			s.source.loop = s.loop;
-
 			s.source.outputAudioMixerGroup = mixerGroup;
 		}
 	}
@@ -63,5 +61,4 @@ public class AudioManager : MonoBehaviour
 	}
 
 	// End Citation
-
 }

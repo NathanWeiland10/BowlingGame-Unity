@@ -1,4 +1,4 @@
-﻿// This code is used to simulate a majority of the components of the game, such as adding and updating the player's score, adjusting the UI, and determining when the game has ended
+﻿// This code is used to simulate a majority of the components of the game, such as adding and updating the player's score, adjusting the UI, and determining when the game has ended:
 
 using UnityEngine;
 using UnityEngine.UI;
@@ -92,7 +92,6 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-
         if (showResetGameCanvas)
         {
             if (Input.GetKeyDown(KeyCode.E)) 
@@ -206,7 +205,6 @@ public class GameManager : MonoBehaviour
                 totalPinCount = 0;
             }
 
-            // Remove the pins:
             Destroy(pin1);
             Destroy(pin2);
             Destroy(pin3);
@@ -226,13 +224,11 @@ public class GameManager : MonoBehaviour
             stopEnding = true;
         }
 
-
         if (timerActive) {
             pinTimer -= Time.deltaTime;
             if (pinTimer <= 0)
             {
                 pinsFinished = false;
-
                 if (frameCounter == 2 && currentFrame == 10 && !willHaveThirdThrowInTenth && !endTheGame && pastTenth)
                 {
                     if (twoFramePinCount + checkForSpare() < 10) {
@@ -258,7 +254,6 @@ public class GameManager : MonoBehaviour
                 {
                     frameCounter = 1;
                 }
-
             }
         }
     }
@@ -273,7 +268,6 @@ public class GameManager : MonoBehaviour
     {
         if (!endTheGame)
         {
-
             if (!pinsFinished && frameCounter == 1)
             {
                 Destroy(player);
@@ -388,8 +382,8 @@ public class GameManager : MonoBehaviour
                     twoFramePinCount++;
                     Destroy(pin10);
                 }
-
                 int j = 0;
+                
                 foreach (FrameScoreCounter f in frameScores)
                 {
                     if (frameScores[j].hasTimesToAddScore())
@@ -439,7 +433,6 @@ public class GameManager : MonoBehaviour
                     {
                         frameScores[currentFrame - 1].changeTimesToAddScore(2);
                     }
-
                     if (currentFrame == 10 && frameCounter == 3)
                     {
                         tenthFrameThirdThrowText.text = "X";
@@ -459,7 +452,6 @@ public class GameManager : MonoBehaviour
                         frameCounter = 0;
                         twoFramePinCount = 0;
                     }
-
                 }
 
                 if (framePinCount != 10)
@@ -671,8 +663,8 @@ public class GameManager : MonoBehaviour
                     Destroy(pin10);
                     pin10 = Instantiate(pin, new Vector3(3f * pinSpacingAmount, yFloorHeight, 3f * pinSpacingAmount), Quaternion.identity);
                 }
-
                 int j = 0;
+                
                 foreach (FrameScoreCounter f in frameScores)
                 {
                     if (frameScores[j].hasTimesToAddScore())
@@ -708,10 +700,9 @@ public class GameManager : MonoBehaviour
                 {
                     frameSecondThrowTexts[currentFrame - 1].text = "-";
                 }
-
                 if (framePinCount == 10)
                 {
-                    frameSecondThrowTexts[currentFrame - 1].text = "X";
+                    frameSecondThrowTexts[currentFrame - 1].text = "X"; // Change this to a '/'?
                 }
 
                 if (twoFramePinCount == 10)
@@ -721,12 +712,10 @@ public class GameManager : MonoBehaviour
                     {
                         frameScores[currentFrame - 1].changeTimesToAddScore(1);
                     }
-
                     if (currentFrame == 10)
                     {
                         willHaveThirdThrowInTenth = true;
                     }
-
                 }
 
                 if (currentFrame != 10)
@@ -748,7 +737,6 @@ public class GameManager : MonoBehaviour
             }
             else if (!pinsFinished && frameCounter == 3)
             {
-
                 if (pin1 != null)
                 {
                     if (pin1.GetComponent<BowlingPin>().getPinFallen())
@@ -865,7 +853,6 @@ public class GameManager : MonoBehaviour
                 showResetGameCanvas = true;
 
                 pinsFinished = true;
-
             }
         }
     }
@@ -943,9 +930,7 @@ public class GameManager : MonoBehaviour
                 testPinCount++;
             }
         }
-
         return testPinCount;
-
     }
 
 }

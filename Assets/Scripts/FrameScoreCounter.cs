@@ -1,11 +1,10 @@
-﻿// This code is used to determine individual frame scores and simulates adding additional pin counts from spares and strikes
+﻿// This code is used to determine individual frame scores and simulates adding additional pin counts from spares and strikes:
 
 using UnityEngine;
 
 public class FrameScoreCounter : MonoBehaviour
 {
 
-    // Set to 0:
     public int timesToAddScore = 0;
     public int totalFrameScore = 0;
 
@@ -15,7 +14,6 @@ public class FrameScoreCounter : MonoBehaviour
 
     public void changeTimesToAddScore(int amount)
     {
-        // Increase the score:
         timesToAddScore += amount;
     }
 
@@ -38,7 +36,6 @@ public class FrameScoreCounter : MonoBehaviour
 
     public void addToTotalPins(int pins)
     {
-        // Add pin count:
         totalFrameScore += pins;
     }
 

@@ -1,4 +1,4 @@
-﻿// This code was previously used to set up 10 pins in an organized manner for testing and debugging purposes
+﻿// This code was previously used to set up 10 pins in an organized manner for testing and debugging purposes:
 
 using UnityEngine;
 

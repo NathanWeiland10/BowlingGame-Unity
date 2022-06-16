@@ -1,4 +1,4 @@
-﻿// This code was written by Brackeyes (https://www.youtube.com/watch?v=6OT43pvUyfY) and is used to create sound effects with unique properties, such as pitch and volume variance
+﻿// This code was written by Brackeyes (https://www.youtube.com/watch?v=6OT43pvUyfY) and is used to create sound effects with unique properties, such as pitch and volume variance:
 
 using UnityEngine.Audio;
 using UnityEngine;

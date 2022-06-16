@@ -1,10 +1,9 @@
-﻿// This code is used to reset the position of the ball
+﻿// This code is used to reset the position of the ball:
 
 using UnityEngine;
 
 public class ChangeBallPosition : MonoBehaviour
 {
-
     public GameObject playerBall;
 
     public void resetBallPosition()

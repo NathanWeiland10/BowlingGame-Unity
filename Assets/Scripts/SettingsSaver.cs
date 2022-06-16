@@ -1,4 +1,4 @@
-﻿// This code is used to save settings of the game between different scenes
+﻿// This code is used to save settings of the game between different scenes:
 
 using UnityEngine;
 
