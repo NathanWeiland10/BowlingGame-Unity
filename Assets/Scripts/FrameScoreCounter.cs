@@ -5,6 +5,7 @@ using UnityEngine;
 public class FrameScoreCounter : MonoBehaviour
 {
 
+    // Set to 0:
     public int timesToAddScore = 0;
     public int totalFrameScore = 0;
 
