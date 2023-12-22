@@ -1,0 +1,13 @@
+How To Play:
+
+1) When first launching the game, you will be taken to the main menu. From here, you can either go to the options menu to adjust the volume or click "Play" to start playing the game.
+
+In Game:
+
+1) You will first be able to use the WASD or arrow keys to move you ball to the left or right to adjust your shot.
+
+2) Press the Spacebar once to begin the 'Power Meter' and then press the Spacebar again to stop the 'Power Meter'; the higher the value from the meter, the more powerful your shot will be.
+
+3) While moving, use the WASD or arrow keys to move your ball.
+
+4) Once you have taken your shot, the ball and 'Power Meter' will be reset.
