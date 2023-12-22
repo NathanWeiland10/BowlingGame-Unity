@@ -39,7 +39,7 @@ public class PlayerBall : MonoBehaviour
             launchSliderValue = (1 - Mathf.Abs(Mathf.Sin(timer * powerSliderSpeed)));
             launchPower = ((1 - Mathf.Abs(Mathf.Sin(timer * powerSliderSpeed))) * maxLaunchPower) + minLaunchPower;
 
-            if (Input.GetKeyDown(KeyCode.Space) && canLaunch)
+            if ((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) && canLaunch)
             {
                 FindObjectOfType<AudioManager>().Play("BallThrow1");
                 FindObjectOfType<AudioManager>().Play("BallRoll1");
@@ -49,7 +49,7 @@ public class PlayerBall : MonoBehaviour
                 timer = Mathf.PI / (powerSliderSpeed * 2);
             }
         }
-        if (Input.GetKeyDown(KeyCode.Space) && canLaunch)
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) && canLaunch)
         {
             isLaunching = true;
         }
